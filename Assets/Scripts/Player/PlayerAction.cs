@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
-    public Light dirLight;
+    public FuseBox fuseBoxInRange;
+    public int fuseCount = 0;
     void Start()
     {
         
@@ -23,13 +24,24 @@ public class PlayerAction : MonoBehaviour
 
     void Use()
     {
-        if(dirLight.intensity == 0)
+        if(fuseBoxInRange != null)
         {
-            dirLight.intensity = 1;
-        }
-        else
-        {
-            dirLight.intensity = 0;
+            if(fuseBoxInRange.isOn)
+            {
+                fuseCount++;
+            }
+            else
+            {
+                if(fuseCount > 0)
+                {
+                    fuseCount--;
+                }
+                else
+                {
+                    return;
+                }
+            }
+            fuseBoxInRange.UseFuse();
         }
     }
 }
