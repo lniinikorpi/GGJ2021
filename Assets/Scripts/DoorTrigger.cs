@@ -7,6 +7,8 @@ public class DoorTrigger : MonoBehaviour
     public UnityEvent actions;
     public Transform cameraToPosition;
     public Transform cameraFromPosition;
+    public GameObject toLevel;
+    public GameObject fromLevel;
     private CameraObject mainCamera;
     void Start()
     {
@@ -37,7 +39,18 @@ public class DoorTrigger : MonoBehaviour
         {
             StartCoroutine(MoveCameraSmooth(cameraToPosition));
         }
+    }
 
+    public void ChangeLevel()
+    {
+        if(GameManager.instance.currentLevel == toLevel)
+        {
+            GameManager.instance.currentLevel = fromLevel;
+        }
+        else
+        {
+            GameManager.instance.currentLevel = toLevel;
+        }
     }
 
     IEnumerator MoveCameraSmooth(Transform to)

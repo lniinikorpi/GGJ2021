@@ -1,18 +1,35 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FuseBox : MonoBehaviour
 {
-    public List<Light> affectedLights = new List<Light>();
+    public Transform affectedLights;
     public bool isOn;
+    public bool firstFuse = false;
+
+    private void Start()
+    {
+        if(!firstFuse)
+        {
+            isOn = false;
+            UseLights();
+        }
+    }
 
     public void UseFuse()
     {
         isOn = !isOn;
-        foreach (Light light in affectedLights)
+        UseLights();
+    }
+
+    private void UseLights()
+    {
+        List<Light> lights = affectedLights.GetComponentsInChildren<Light>().ToList();
+        foreach (Light light in lights)
         {
-            if(isOn)
+            if (isOn)
             {
                 light.intensity = 1;
             }
