@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
     public Camera mainCamera;
     public GameObject currentLevel;
     public GameObject player;
+    public Light directionalLight;
     public static GameManager instance = null;
+    public bool firstStart = true;
 
     private void Awake()
     {

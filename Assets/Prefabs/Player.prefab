@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuseBoxInRange: {fileID: 0}
-  fuseCount: 0
+  fuseCount: 1
 --- !u!114 &8909316633363241960
 MonoBehaviour:
   m_ObjectHideFlags: 0
