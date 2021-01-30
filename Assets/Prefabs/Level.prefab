@@ -10598,6 +10598,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3628151980195573120}
     m_Modifications:
+    - target: {fileID: 1123305028860850527, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089333302537867501, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: cameraToPosition
       value: 
@@ -11012,6 +11020,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3628151980195573120}
     m_Modifications:
+    - target: {fileID: 1123305028860850527, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089333302537867501, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: cameraToPosition
       value: 
