@@ -6,6 +6,7 @@ using UnityEngine;
 public class FuseBox : MonoBehaviour
 {
     public Transform affectedLights;
+    public GameObject keyInfo;
     public bool isOn;
     public bool firstFuse = false;
 
@@ -16,6 +17,8 @@ public class FuseBox : MonoBehaviour
             isOn = false;
             UseLights();
         }
+        keyInfo.SetActive(false);
+        keyInfo.transform.rotation = Quaternion.Euler(keyInfo.transform.rotation.eulerAngles.x, 360 - transform.rotation.y, keyInfo.transform.rotation.z);
     }
 
     public void UseFuse()
@@ -45,6 +48,7 @@ public class FuseBox : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             other.GetComponent<PlayerAction>().fuseBoxInRange = this;
+            keyInfo.SetActive(true);
         }
     }
 
@@ -55,6 +59,7 @@ public class FuseBox : MonoBehaviour
             PlayerAction pA = other.GetComponent<PlayerAction>();
             if(pA.fuseBoxInRange == this)
             {
+                keyInfo.SetActive(false);
                 pA.fuseBoxInRange = null;
             }
         }

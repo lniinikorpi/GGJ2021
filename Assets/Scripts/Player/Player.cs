@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public Transform teleportLocation;
+    public List<string> collectedKeys = new List<string>();
     // Start is called before the first frame update
     void Start()
     {
