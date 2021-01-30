@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,5 +44,15 @@ public class PlayerAction : MonoBehaviour
             }
             fuseBoxInRange.UseFuse();
         }
+    }
+
+    public void OnMap()
+    {
+        Map();
+    }
+
+    private void Map()
+    {
+        UIManager.instance.ToggleMap();
     }
 }

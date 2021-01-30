@@ -31,7 +31,7 @@ public class FuseBox : MonoBehaviour
         {
             if (isOn)
             {
-                light.intensity = 1;
+                light.intensity = 4.7f;
             }
             else
             {
