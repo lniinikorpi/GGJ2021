@@ -1580,22 +1580,22 @@ MonoBehaviour:
   - {x: 0, y: 3, z: 3.75}
   - {x: 0.5, y: 3, z: 3.75}
   - {x: 0.5, y: 0, z: 3.75}
-  - {x: 0, y: 3, z: 5.5}
-  - {x: 0, y: 0, z: 5.5}
-  - {x: 0.5, y: 0, z: 5.5}
-  - {x: 0.5, y: 3, z: 5.5}
+  - {x: 0, y: 3, z: 6.5}
+  - {x: 0, y: 0, z: 6.5}
+  - {x: 0.5, y: 0, z: 6.5}
+  - {x: 0.5, y: 3, z: 6.5}
   - {x: 0, y: 3, z: 10.75}
   - {x: 0.5, y: 3, z: 10.75}
-  - {x: 0, y: 3, z: 5.5}
-  - {x: 0.5, y: 3, z: 5.5}
+  - {x: 0, y: 3, z: 6.5}
+  - {x: 0.5, y: 3, z: 6.5}
   - {x: 0, y: 0, z: 10.75}
   - {x: 0, y: 3, z: 10.75}
-  - {x: 0, y: 0, z: 5.5}
-  - {x: 0, y: 3, z: 5.5}
+  - {x: 0, y: 0, z: 6.5}
+  - {x: 0, y: 3, z: 6.5}
   - {x: 0.5, y: 0, z: 10.75}
   - {x: 0, y: 0, z: 10.75}
-  - {x: 0.5, y: 0, z: 5.5}
-  - {x: 0, y: 0, z: 5.5}
+  - {x: 0.5, y: 0, z: 6.5}
+  - {x: 0, y: 0, z: 6.5}
   - {x: 0, y: 0, z: -0.5}
   - {x: 0.5, y: 0, z: -0.5}
   - {x: 0, y: 0, z: 3.75}
@@ -1613,8 +1613,8 @@ MonoBehaviour:
   - {x: 0.5, y: 3, z: 3.75}
   - {x: 0, y: 3, z: 3.75}
   - {x: 0.5, y: 0, z: 10.75}
-  - {x: 0.5, y: 0, z: 5.5}
-  - {x: 0.5, y: 3, z: 5.5}
+  - {x: 0.5, y: 0, z: 6.5}
+  - {x: 0.5, y: 3, z: 6.5}
   - {x: 0.5, y: 3, z: 10.75}
   - {x: 10.5, y: 3, z: 11.25}
   - {x: 10.5, y: 0, z: 11.25}
@@ -1811,16 +1811,16 @@ MonoBehaviour:
   - {x: 0.5, y: 3}
   - {x: 0, y: 10.75}
   - {x: 0.5, y: 10.75}
-  - {x: 0, y: 5.5}
-  - {x: 0.5, y: 5.5}
+  - {x: 0, y: 6.5}
+  - {x: 0.5, y: 6.5}
   - {x: -10.75, y: 0}
   - {x: -10.75, y: 3}
-  - {x: -5.5, y: 0}
-  - {x: -5.5, y: 3}
+  - {x: -6.5, y: 0}
+  - {x: -6.5, y: 3}
   - {x: -0.5, y: 10.75}
   - {x: 0, y: 10.75}
-  - {x: -0.5, y: 5.5}
-  - {x: 0, y: 5.5}
+  - {x: -0.5, y: 6.5}
+  - {x: 0, y: 6.5}
   - {x: 0, y: -0.5}
   - {x: -0.5, y: -0.5}
   - {x: 0, y: 3.75}
@@ -1838,8 +1838,8 @@ MonoBehaviour:
   - {x: 0.5, y: 3.75}
   - {x: 0, y: 3.75}
   - {x: 10.75, y: 0}
-  - {x: 5.5, y: 0}
-  - {x: 5.5, y: 3}
+  - {x: 6.5, y: 0}
+  - {x: 6.5, y: 3}
   - {x: 10.75, y: 3}
   - {x: -10.5, y: 3}
   - {x: -10.5, y: 0}
@@ -2109,105 +2109,9 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 160000002300000021000000050000000a000000110000000d0000002e00000028000000310000001700000035000000
-  m_SelectedEdges:
-  - a: 88
-    b: 89
-  - a: 91
-    b: 88
-  - a: 89
-    b: 90
-  - a: 90
-    b: 91
-  - a: 140
-    b: 141
-  - a: 142
-    b: 140
-  - a: 141
-    b: 143
-  - a: 143
-    b: 142
-  - a: 132
-    b: 133
-  - a: 134
-    b: 132
-  - a: 133
-    b: 135
-  - a: 135
-    b: 134
-  - a: 20
-    b: 21
-  - a: 22
-    b: 20
-  - a: 21
-    b: 23
-  - a: 23
-    b: 22
-  - a: 40
-    b: 41
-  - a: 42
-    b: 40
-  - a: 41
-    b: 43
-  - a: 43
-    b: 42
-  - a: 68
-    b: 69
-  - a: 70
-    b: 68
-  - a: 69
-    b: 71
-  - a: 71
-    b: 70
-  - a: 52
-    b: 53
-  - a: 54
-    b: 52
-  - a: 53
-    b: 55
-  - a: 55
-    b: 54
-  - a: 184
-    b: 185
-  - a: 186
-    b: 184
-  - a: 185
-    b: 187
-  - a: 187
-    b: 186
-  - a: 160
-    b: 161
-  - a: 162
-    b: 160
-  - a: 161
-    b: 163
-  - a: 163
-    b: 162
-  - a: 197
-    b: 196
-  - a: 196
-    b: 198
-  - a: 198
-    b: 199
-  - a: 199
-    b: 197
-  - a: 92
-    b: 93
-  - a: 93
-    b: 94
-  - a: 94
-    b: 95
-  - a: 95
-    b: 92
-  - a: 213
-    b: 212
-  - a: 212
-    b: 214
-  - a: 214
-    b: 215
-  - a: 215
-    b: 213
-  m_SelectedVertices: 58000000590000005b0000005a0000008c0000008d0000008e0000008f000000840000008500000086000000870000001400000015000000160000001700000028000000290000002a0000002b0000004400000045000000460000004700000034000000350000003600000037000000b8000000b9000000ba000000bb000000a0000000a1000000a2000000a3000000c6000000c5000000c4000000c70000005c0000005d0000005e0000005f000000d6000000d5000000d4000000d7000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &3956028513335178767
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7299,10 +7203,10 @@ MonoBehaviour:
   - {x: -3.3125, y: 0, z: 5.828125}
   - {x: -4.65625, y: 0, z: 5.125}
   - {x: -6, y: 0, z: 5.125}
-  - {x: -6, y: 0, z: 5.828125}
+  - {x: -6.5, y: 0, z: 5.828125}
   - {x: -4.65625, y: 0, z: 5.828125}
-  - {x: -6, y: 0, z: 5.828125}
-  - {x: -6, y: 0, z: 6.53125}
+  - {x: -6.5, y: 0, z: 5.828125}
+  - {x: -6.5, y: 0, z: 6.53125}
   - {x: -4.65625, y: 0, z: 6.53125}
   - {x: -4.65625, y: 0, z: 5.828125}
   - {x: -4.65625, y: 0, z: 6.53125}
@@ -7314,7 +7218,7 @@ MonoBehaviour:
   - {x: -4.65625, y: 0, z: 7.234375}
   - {x: -3.3125, y: 0, z: 7.234375}
   - {x: -4.65625, y: 0, z: 6.53125}
-  - {x: -6, y: 0, z: 6.53125}
+  - {x: -6.5, y: 0, z: 6.53125}
   - {x: -6, y: 0, z: 7.234375}
   - {x: -4.65625, y: 0, z: 7.234375}
   - {x: -6, y: 0, z: 7.234375}
@@ -8286,7 +8190,7 @@ MonoBehaviour:
   - {x: 4.75, y: 0, z: -1}
   - {x: 3.40625, y: 0, z: -1}
   - {x: -6, y: 0, z: 5.125}
-  - {x: -6, y: 0, z: 5.828125}
+  - {x: -6.5, y: 0, z: 5.828125}
   - {x: -6.5, y: 0, z: 5.125}
   - {x: -6.5, y: 0, z: 5.828125}
   - {x: -6, y: 0, z: 4.421875}
@@ -8368,10 +8272,10 @@ MonoBehaviour:
   - {x: -3.3125, y: 5.828125}
   - {x: -4.65625, y: 5.125}
   - {x: -6, y: 5.125}
-  - {x: -6, y: 5.828125}
+  - {x: -6.5, y: 5.828125}
   - {x: -4.65625, y: 5.828125}
-  - {x: -6, y: 5.828125}
-  - {x: -6, y: 6.53125}
+  - {x: -6.5, y: 5.828125}
+  - {x: -6.5, y: 6.53125}
   - {x: -4.65625, y: 6.53125}
   - {x: -4.65625, y: 5.828125}
   - {x: -4.65625, y: 6.53125}
@@ -8383,7 +8287,7 @@ MonoBehaviour:
   - {x: -4.65625, y: 7.234375}
   - {x: -3.3125, y: 7.234375}
   - {x: -4.65625, y: 6.53125}
-  - {x: -6, y: 6.53125}
+  - {x: -6.5, y: 6.53125}
   - {x: -6, y: 7.234375}
   - {x: -4.65625, y: 7.234375}
   - {x: -6, y: 7.234375}
@@ -9355,7 +9259,7 @@ MonoBehaviour:
   - {x: 4.75, y: -1}
   - {x: 3.40625, y: -1}
   - {x: -6, y: 5.125}
-  - {x: -6, y: 5.828125}
+  - {x: -6.5, y: 5.828125}
   - {x: -6.5, y: 5.125}
   - {x: -6.5, y: 5.828125}
   - {x: -6, y: 4.421875}
@@ -10426,9 +10330,9 @@ MonoBehaviour:
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
-  - {x: 1, y: 0, z: 0, w: -1}
+  - {x: NaN, y: NaN, z: NaN, w: 1}
+  - {x: NaN, y: NaN, z: NaN, w: 1}
+  - {x: NaN, y: NaN, z: NaN, w: 1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
   - {x: 1, y: 0, z: 0, w: -1}
@@ -10447,12 +10351,8 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 1026
-    b: 1027
-  - a: 1030
-    b: 1031
-  m_SelectedVertices: 02040000030400000604000007040000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!64 &5639344703893179717
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10698,6 +10598,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3628151980195573120}
     m_Modifications:
+    - target: {fileID: 1123305028860850527, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089333302537867501, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: cameraToPosition
       value: 
@@ -10709,11 +10617,11 @@ PrefabInstance:
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: toLevel
       value: 
-      objectReference: {fileID: 6249710862964637653}
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: fromLevel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6249710862964637653}
     - target: {fileID: 7240990210982222488, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.628653
@@ -10724,7 +10632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7240990210982222488, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.16129732
+      value: 0.5887027
       objectReference: {fileID: 0}
     - target: {fileID: 7240990210982222488, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: m_LocalRotation.x
@@ -10795,11 +10703,11 @@ PrefabInstance:
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: toLevel
       value: 
-      objectReference: {fileID: 6249710862964637653}
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: fromLevel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6249710862964637653}
     - target: {fileID: 7240990210982222488, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1286521
@@ -10954,7 +10862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123528385667324489, guid: 089f036165310f54a89711b74149a5a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 123528385667324489, guid: 089f036165310f54a89711b74149a5a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11036,7 +10944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 123528385667324489, guid: 089f036165310f54a89711b74149a5a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 123528385667324489, guid: 089f036165310f54a89711b74149a5a1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11112,6 +11020,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3628151980195573120}
     m_Modifications:
+    - target: {fileID: 1123305028860850527, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4089333302537867501, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: cameraToPosition
       value: 
@@ -11123,11 +11039,11 @@ PrefabInstance:
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: toLevel
       value: 
-      objectReference: {fileID: 6249710862964637653}
+      objectReference: {fileID: 0}
     - target: {fileID: 5367762226548830482, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: fromLevel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6249710862964637653}
     - target: {fileID: 7240990210982222488, guid: a6e7fc7d576f0b24fb301cc853a54e15, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1286521
