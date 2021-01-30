@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     private Vector3 _movement;
     public IconMove iconMove;
+    public GameObject playerModel;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,17 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector3(_movement.x, rb.velocity.y, _movement.y) * speed * Time.fixedDeltaTime;
-        iconMove.MoveIcon(new Vector2(_movement.x, _movement.y));
+        //Rotate player model
+        if (_movement != Vector3.zero)
+        {
+            iconMove.MoveIcon(new Vector2(_movement.x, _movement.y));
+
+            Vector3 direction = playerModel.transform.localPosition - _movement;
+
+            float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
+            Vector3 directionVector = new Vector3(0, angle, 0);
+            playerModel.transform.rotation = Quaternion.Euler(directionVector); 
+        }
     }
 
     public void OnMove(InputValue value)

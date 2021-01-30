@@ -79,6 +79,7 @@ MonoBehaviour:
   speed: 300
   rb: {fileID: 8909316633363241963}
   iconMove: {fileID: 0}
+  playerModel: {fileID: 3238661915700295456}
 --- !u!114 &8909316633363241962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e5a492c2ca867e4381ec49101a0985a, type: 3}
+--- !u!1 &3238661915700295456 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1251146640606069518, guid: 9e5a492c2ca867e4381ec49101a0985a, type: 3}
+  m_PrefabInstance: {fileID: 4444770153772184622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2862558143065795994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1880014874139941300, guid: 9e5a492c2ca867e4381ec49101a0985a, type: 3}

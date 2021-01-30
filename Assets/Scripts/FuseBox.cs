@@ -32,12 +32,10 @@ public class FuseBox : MonoBehaviour
             if (isOn)
             {
                 light.intensity = 20f;
-                GameManager.instance.directionalLight.intensity = .3f;
             }
             else
             {
                 light.intensity = 0;
-                GameManager.instance.directionalLight.intensity = 0f;
             }
         }
     }
