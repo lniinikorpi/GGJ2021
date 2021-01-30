@@ -161,7 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpawn: {fileID: 7756364717941505415}
   bulletPrefab: {fileID: 536335788945074522, guid: a5cfa499e2744b945aabf1175973dccd, type: 3}
-  barrel: {fileID: 0}
+  barrel: {fileID: 682518909201228870}
   level: {fileID: 0}
   rotateToPlayer: 0
   fireRate: 1
