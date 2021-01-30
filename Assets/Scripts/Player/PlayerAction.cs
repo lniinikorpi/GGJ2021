@@ -7,9 +7,15 @@ public class PlayerAction : MonoBehaviour
 {
     public FuseBox fuseBoxInRange;
     public int fuseCount = 0;
+    public GameObject fuse;
+    public GameObject playerLightObject;
+    Light playerLight;
+    float playerLightIntensity;
+
     void Start()
     {
-        
+        playerLight = playerLightObject.GetComponent<Light>();
+        playerLightIntensity = playerLight.intensity;
     }
 
     // Update is called once per frame
@@ -30,17 +36,22 @@ public class PlayerAction : MonoBehaviour
             if(fuseBoxInRange.isOn)
             {
                 fuseCount++;
+                fuse.SetActive(true);
+
+                playerLight.intensity = playerLightIntensity;
             }
             else
             {
                 if(fuseCount > 0)
                 {
                     fuseCount--;
+                    fuse.SetActive(false);
                 }
                 else
                 {
                     return;
                 }
+                playerLight.intensity = 0;
             }
             fuseBoxInRange.UseFuse();
         }
