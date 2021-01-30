@@ -9,6 +9,8 @@ public class DoorTrigger : MonoBehaviour
     public Transform cameraFromPosition;
     public GameObject toLevel;
     public GameObject fromLevel;
+    public Transform toTeleportLocation;
+    public Transform fromTeleportLocation;
     private CameraObject mainCamera;
     void Start()
     {
@@ -46,10 +48,12 @@ public class DoorTrigger : MonoBehaviour
         if(GameManager.instance.currentLevel == toLevel)
         {
             GameManager.instance.currentLevel = fromLevel;
+            GameManager.instance.player.GetComponent<Player>().teleportLocation = fromTeleportLocation;
         }
         else
         {
             GameManager.instance.currentLevel = toLevel;
+            GameManager.instance.player.GetComponent<Player>().teleportLocation = toTeleportLocation;
         }
     }
 

@@ -31,7 +31,14 @@ public class FuseBox : MonoBehaviour
         {
             if (isOn)
             {
-                light.intensity = 4.7f;
+                if(light.type == LightType.Directional)
+                {
+                    light.intensity = .3f;
+                }
+                else
+                {
+                    light.intensity = 4.7f;
+                }
             }
             else
             {

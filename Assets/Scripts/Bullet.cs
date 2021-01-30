@@ -18,6 +18,10 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
+            GameManager.instance.player.GetComponent<Player>().Die();
+        }
         Destroy(gameObject);
     }
 }
