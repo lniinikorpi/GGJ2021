@@ -22,7 +22,7 @@ public class Turret : MonoBehaviour
     float _canShoot;
     void Start()
     {
-        _canShoot = fireRate;
+        _canShoot = 1/fireRate;
     }
 
     // Update is called once per frame
@@ -33,7 +33,7 @@ public class Turret : MonoBehaviour
             if (Time.time >= _canShoot)
             {
                 Shoot();
-                _canShoot += 1 / fireRate;
+                _canShoot = Time.time + (1 / fireRate);
             }
         }
         StartCoroutine(TurnTurret());

@@ -57,10 +57,12 @@ public class FuseBox : MonoBehaviour
         fuseActive.SetActive(isOn);
         if (isOn)
         {
-            bulbMeshRenderer.material.SetColor("_EmissionColor", fuseboxActiveColor);
+            //bulbMeshRenderer.material.SetColor("_EmissionColor", fuseboxActiveColor);
+            bulbMeshRenderer.material = fuseboxActiveMaterial;
         } else
         {
-            bulbMeshRenderer.material.SetColor("_EmissionColor", fuseboxInactiveColor);
+            //bulbMeshRenderer.material.SetColor("_EmissionColor", fuseboxInactiveColor);
+            bulbMeshRenderer.material = fuseboxInactiveMaterial;
         }
     }
 
@@ -71,7 +73,7 @@ public class FuseBox : MonoBehaviour
         {
             if (isOn)
             {
-                light.intensity = 7f;
+                light.intensity = 25f;
             }
             else
             {
