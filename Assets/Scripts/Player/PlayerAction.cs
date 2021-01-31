@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -59,11 +60,21 @@ public class PlayerAction : MonoBehaviour
 
     public void OnMap()
     {
-        Map();
+        //Map();
     }
 
     private void Map()
     {
         UIManager.instance.ToggleMap();
+    }
+
+    public void OnPause()
+    {
+        Pause();
+    }
+
+    private void Pause()
+    {
+        UIManager.instance.TogglePause();
     }
 }
