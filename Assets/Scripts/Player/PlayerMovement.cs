@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _movement;
     public IconMove iconMove;
     public GameObject playerModel;
+
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,16 @@ public class PlayerMovement : MonoBehaviour
 
             float angle = Mathf.Atan2(direction.x, direction.y) * Mathf.Rad2Deg;
             Vector3 directionVector = new Vector3(0, angle, 0);
-            playerModel.transform.rotation = Quaternion.Euler(directionVector); 
+            playerModel.transform.rotation = Quaternion.Euler(directionVector);
+
+            if (!audioSource.isPlaying) { 
+                audioSource.Play();
+            }
+
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 

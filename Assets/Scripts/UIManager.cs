@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance = null;
     public GameObject mapPanel;
     public GameObject pausePanel;
+    public GameObject itemPanel;
     bool pauseIsOn = false;
     bool mapIsOn = false;
 
@@ -44,6 +45,11 @@ public class UIManager : MonoBehaviour
     {
         mapIsOn = !mapIsOn;
         mapPanel.SetActive(mapIsOn);
+    }
+
+    public void ToggleItem()
+    {
+        itemPanel.SetActive(true);
     }
 
     public void LoadScene(int value)

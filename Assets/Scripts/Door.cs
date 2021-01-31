@@ -6,6 +6,11 @@ public class Door : MonoBehaviour
 {
     public string keyToOpen;
     public Animator anim;
+
+    public AudioSource audioSource;
+    public AudioClip doorOpen;
+    public AudioClip doorClose;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,7 @@ public class Door : MonoBehaviour
                 if(s == keyToOpen)
                 {
                     anim.SetBool("Open", true);
+                    audioSource.PlayOneShot(doorOpen);
                 }
             }
         }
@@ -41,6 +47,7 @@ public class Door : MonoBehaviour
                 if (s == keyToOpen)
                 {
                     anim.SetBool("Open", false);
+                    audioSource.PlayOneShot(doorClose);
                 }
             }
         }
