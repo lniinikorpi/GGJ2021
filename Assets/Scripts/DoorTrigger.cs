@@ -49,11 +49,13 @@ public class DoorTrigger : MonoBehaviour
         {
             GameManager.instance.currentLevel = fromLevel;
             GameManager.instance.player.GetComponent<Player>().teleportLocation = fromTeleportLocation;
+            GameManager.instance.player.transform.position = fromTeleportLocation.position;
         }
         else
         {
             GameManager.instance.currentLevel = toLevel;
             GameManager.instance.player.GetComponent<Player>().teleportLocation = toTeleportLocation;
+            GameManager.instance.player.transform.position = toTeleportLocation.position;
         }
     }
 

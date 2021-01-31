@@ -1340,11 +1340,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8909316633363241961}
-  - component: {fileID: 8909316633363241972}
   - component: {fileID: 5929961425505514713}
   - component: {fileID: 8909316633363241973}
   - component: {fileID: 8909316633363241962}
   - component: {fileID: 8909316633363241960}
+  - component: {fileID: 412675681843269450}
   - component: {fileID: 8909316633363241963}
   m_Layer: 0
   m_Name: Player
@@ -1369,19 +1369,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8909316633363241972
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909316633363241970}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.83536685, y: 2.7923644, z: 1}
-  m_Center: {x: -0.0026703873, y: 1.4047056, z: 0}
 --- !u!114 &5929961425505514713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1458,6 +1445,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!65 &412675681843269450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909316633363241970}
+  m_Material: {fileID: 13400000, guid: 37df8c92f04f08e4698d11abf29f2570, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85, y: 2.03, z: 0.82}
+  m_Center: {x: 0, y: 0.97, z: 0}
 --- !u!54 &8909316633363241963
 Rigidbody:
   m_ObjectHideFlags: 0

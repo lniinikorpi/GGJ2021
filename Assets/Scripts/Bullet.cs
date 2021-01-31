@@ -6,10 +6,8 @@ public class Bullet : MonoBehaviour
 {
     [HideInInspector]
     public float speed = 1;
-    void Start()
-    {
-        Destroy(gameObject, 20);
-    }
+    public AudioSource audioSource;
+    public GameObject explosion;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +27,8 @@ public class Bullet : MonoBehaviour
         }
         else
         {
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            audioSource.Play();
             Destroy(gameObject);
         }
     }

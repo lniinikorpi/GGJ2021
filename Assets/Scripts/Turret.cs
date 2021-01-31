@@ -11,6 +11,7 @@ public class Turret : MonoBehaviour
     public GameObject level;
     [Tooltip("Check if you want the turret to face player")]
     public bool rotateToPlayer;
+    public AudioSource audioSource;
 
     [Header("Turret stats")]
     [Tooltip("Bullets per second")]
@@ -43,6 +44,7 @@ public class Turret : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
         bullet.GetComponent<Bullet>().speed = bulletSpeed;
+        audioSource.Play();
     }
 
     IEnumerator TurnTurret()
