@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    [HideInInspector]
     public float speed = 1;
     void Start()
     {
@@ -22,6 +23,13 @@ public class Bullet : MonoBehaviour
         {
             GameManager.instance.player.GetComponent<Player>().Die();
         }
-        Destroy(gameObject);
+        if (other.CompareTag("Bullet"))
+        {
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

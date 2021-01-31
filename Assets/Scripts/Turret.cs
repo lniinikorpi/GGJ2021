@@ -15,6 +15,7 @@ public class Turret : MonoBehaviour
     [Header("Turret stats")]
     [Tooltip("Bullets per second")]
     public float fireRate = 1;
+    public float bulletSpeed = 3;
     [Range(0,2)]
     public float turnSpeed = 1;
 
@@ -41,6 +42,7 @@ public class Turret : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawn.position, bulletSpawn.rotation);
+        bullet.GetComponent<Bullet>().speed = bulletSpeed;
     }
 
     IEnumerator TurnTurret()
