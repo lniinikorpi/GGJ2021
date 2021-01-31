@@ -4841,7 +4841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyName: Yellow
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 4944572579412000850}
 --- !u!82 &4944572579412000850
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4854,7 +4854,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2f905c7b238ffb41aa23fcab3bc3b5d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.513
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
