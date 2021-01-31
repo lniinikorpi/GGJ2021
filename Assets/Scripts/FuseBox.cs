@@ -12,6 +12,7 @@ public class FuseBox : MonoBehaviour
     public GameObject fuseActive;
     public bool isOn;
     public bool firstFuse = false;
+    public AudioSource audioSource;
 
     public GameObject bulb;
     public MeshRenderer bulbMeshRenderer;
@@ -48,6 +49,7 @@ public class FuseBox : MonoBehaviour
         EnableFuse();
         UseLights(affectedLights);
         UseLights(fuseboxLights);
+        audioSource.Play();
     }
 
     private void EnableFuse()
